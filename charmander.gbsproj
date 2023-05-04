@@ -6,7 +6,7 @@
     "scenes": [
         {
             "name": "Scene 1",
-            "backgroundId": "0f617909-6ce5-4949-8af5-bfadb94bcaa2",
+            "backgroundId": "75e99908-690f-46d8-9e56-ea802c745708",
             "width": 20,
             "height": 18,
             "type": "TOPDOWN",
@@ -124,14 +124,15 @@
                             "right"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
                             {
                                 "command": "EVENT_SOUND_PLAY_EFFECT",
                                 "args": {
-                                    "type": "a72742cf-531e-4807-8209-a58ef0c5e3c5",
+                                    "type": "dbcf1760-976a-40a4-95c3-12c1fe507275",
                                     "priority": "medium",
                                     "pitch": 4,
                                     "frequency": 200,
@@ -179,14 +180,14 @@
                 {
                     "command": "EVENT_SOUND_PLAY_EFFECT",
                     "args": {
-                        "type": "a72742cf-531e-4807-8209-a58ef0c5e3c5",
+                        "type": "dbcf1760-976a-40a4-95c3-12c1fe507275",
                         "priority": "high",
                         "pitch": 4,
                         "frequency": 200,
                         "duration": 0.5,
                         "wait": true,
                         "effect": 0,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "6070e855-0462-4823-8154-ea71a071032c"
                 },
@@ -317,7 +318,7 @@
                 {
                     "command": "EVENT_SOUND_PLAY_EFFECT",
                     "args": {
-                        "type": "crash",
+                        "type": "tone",
                         "priority": "medium",
                         "pitch": 5,
                         "frequency": 200,
@@ -374,17 +375,6 @@
     ],
     "backgrounds": [
         {
-            "id": "8da03e9f-080e-410a-8daf-d402edcc4614",
-            "name": "Untitled",
-            "symbol": "bg_untitled",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "Untitled.png",
-            "tileColors": []
-        },
-        {
             "id": "d57621c4-7c37-43d6-aaa5-8c41b1847eab",
             "name": "credits",
             "symbol": "bg_pixil_layer_background",
@@ -392,7 +382,38 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "credits.png"
+            "filename": "credits.png",
+            "tileColors": []
+        },
+        {
+            "id": "75e99908-690f-46d8-9e56-ea802c745708",
+            "name": "final",
+            "symbol": "bg_final",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "final.png"
+        },
+        {
+            "id": "98af409b-f496-442a-b2f4-5ad4fac8aacb",
+            "name": "gb",
+            "symbol": "bg_gb",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "gb.png"
+        },
+        {
+            "id": "b5e229e0-7fa2-4448-9632-e4302040b0ac",
+            "name": "gbp",
+            "symbol": "bg_gbp",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "gbp.png"
         },
         {
             "id": "9d962418-bb26-4671-93d5-6a034b5f1730",
@@ -402,7 +423,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "pixel.png"
+            "filename": "pixel.png",
+            "tileColors": []
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -414,6 +436,16 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "tileColors": []
+        },
+        {
+            "id": "038418d7-f3a9-489d-a5f1-7198b818b0bf",
+            "name": "red",
+            "symbol": "bg_red",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "red.png"
         },
         {
             "id": "53eda63a-190b-4f3b-89cc-ae3742de389e",
@@ -447,6 +479,16 @@
             "imageHeight": 144,
             "filename": "test3.png",
             "tileColors": []
+        },
+        {
+            "id": "fc5c09ca-7abc-48d6-bf67-1b96a3abebee",
+            "name": "yellow",
+            "symbol": "bg_yellow",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "yellow.png"
         }
     ],
     "spriteSheets": [
@@ -1278,7 +1320,7 @@
                             {
                                 "command": "EVENT_SOUND_PLAY_EFFECT",
                                 "args": {
-                                    "type": "a72742cf-531e-4807-8209-a58ef0c5e3c5",
+                                    "type": "dbcf1760-976a-40a4-95c3-12c1fe507275",
                                     "priority": "medium",
                                     "pitch": 4,
                                     "frequency": 200,
@@ -1293,50 +1335,18 @@
                     "id": "7b34d76a-2f7a-44c2-8b9e-58629e05a710"
                 }
             ]
+        },
+        {
+            "id": "0eae22e7-7ab8-4245-9518-ee8ff4f3b934",
+            "name": "",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_2",
+            "script": []
         }
     ],
-    "music": [
-        {
-            "id": "2185ce5f-3f34-44d2-a3da-6c049fc6b73d",
-            "name": "song_template 1",
-            "symbol": "song_song_template_1",
-            "filename": "song_template 1.uge",
-            "settings": {},
-            "type": "uge"
-        },
-        {
-            "id": "aff547c0-5549-4c16-a843-957efe4d0063",
-            "name": "song_template 2",
-            "symbol": "song_song_template_2",
-            "filename": "song_template 2.uge",
-            "settings": {},
-            "type": "uge"
-        },
-        {
-            "id": "2db40fe1-6958-44c9-965a-51eeaf9636a1",
-            "name": "song_template 3",
-            "symbol": "song_song_template_3",
-            "filename": "song_template 3.uge",
-            "settings": {},
-            "type": "uge"
-        },
-        {
-            "id": "e56d38cb-e3b0-4a7c-96ea-df2219d765b1",
-            "name": "song_template",
-            "symbol": "song_song_template",
-            "filename": "song_template.uge",
-            "settings": {},
-            "type": "uge"
-        },
-        {
-            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
-            "name": "template",
-            "symbol": "song_template",
-            "filename": "template.mod",
-            "settings": {},
-            "type": "mod"
-        }
-    ],
+    "music": [],
     "sounds": [
         {
             "id": "a72742cf-531e-4807-8209-a58ef0c5e3c5",
@@ -1344,7 +1354,7 @@
             "symbol": "sound_charizard_s_cry_3_wav",
             "filename": "Charizard's Cry.wav",
             "type": "wav",
-            "inode": "844424930832680",
+            "inode": "10414574138495674",
             "_v": 1683024536364
         },
         {
@@ -1353,7 +1363,7 @@
             "symbol": "sound_earthquake_wav",
             "filename": "Earthquake.wav",
             "type": "wav",
-            "inode": "844424930837260",
+            "inode": "6755399441257148",
             "_v": 1683025039712
         },
         {
@@ -1362,7 +1372,7 @@
             "symbol": "sound_ember_wav",
             "filename": "Ember.wav",
             "type": "wav",
-            "inode": "844424930837265",
+            "inode": "6755399441257149",
             "_v": 1683027418718
         },
         {
@@ -1371,7 +1381,7 @@
             "symbol": "sound_firepunch_wav",
             "filename": "FirePunch.wav",
             "type": "wav",
-            "inode": "844424930837259",
+            "inode": "3940649674150595",
             "_v": 1683024953458
         },
         {
@@ -1380,8 +1390,26 @@
             "symbol": "sound_flamethrower_wav",
             "filename": "Flamethrower.wav",
             "type": "wav",
-            "inode": "844424930837258",
+            "inode": "6755399441257159",
             "_v": 1683024942535
+        },
+        {
+            "id": "dbcf1760-976a-40a4-95c3-12c1fe507275",
+            "name": "charizard_cry_converted.wav",
+            "symbol": "sound_test2_wav",
+            "filename": "charizard_cry_converted.wav",
+            "type": "wav",
+            "inode": "10696049115170148",
+            "_v": 1683159971932
+        },
+        {
+            "id": "89e630a0-b10d-4940-bbdc-571d3082d9ff",
+            "name": "earthquake_converted.wav",
+            "symbol": "sound_earthquake_converted_",
+            "filename": "earthquake_converted.wav",
+            "type": "wav",
+            "inode": "8162774324774351",
+            "_v": 1683160288692
         }
     ],
     "fonts": [
@@ -1485,8 +1513,8 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 588.6666870117188,
-        "worldScrollY": 313.3333435058594,
+        "worldScrollX": 691.3333129882812,
+        "worldScrollY": 416.6666564941406,
         "zoom": 175,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -1515,9 +1543,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            521,
-            158,
-            158
+            367,
+            111,
+            111
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
